@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes slidein{
+            0%{
+              left:0;
+              top: 0;
+              background-color: yellow;
+            }
+            /* bouns effect */
+            50%{
+                left: 400px;
+                top: 140px;
+                background-color: rgb(255, 136, 0);
+
+            }
+            100%{
+              left: 800px;
+              top: 0;
+              background-color: yellow;
+
+            }
+        }
+          .stage{
+            background-color: rgb(199, 228, 241);
+            height: 200px;
+            min-width: 800px;
+          }
+        .ball{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: red;
+            position:absolute; 
+        }
+        .stage:hover .ball{
+            animation: slidein 3s ease-in-out 1s infinite alternate ;
+        }
+    </style>
+</head>
+<body>
+   <div class="stage">
+       <div class="ball">
+
+       </div>
+   </div> 
+</body>
+</html>
